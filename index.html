@@ -1,4 +1,4 @@
-﻿       <!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
         }
 
         .container {
-            text-align: center;
+            text-align: left;
             z-index: 2; /* Ensure content is above the hearts */
             width: 100%; /* Full width for mobile */
             max-width: 720px; /* Limit to 720px width */
@@ -64,7 +64,7 @@
         }
 
         .letter {
-            background: rgba(255, 255, 255, 0.8); /* Translucent white background */
+            background: rgba(255, 255, 255, 0.5); /* Translucent white background */
             padding: 20px; /* Slightly larger padding for better spacing */
             border-radius: 15px; /* Rounded corners */
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -134,6 +134,7 @@
             margin-top: 15px;
             font-size: 14px; /* Slightly larger font size */
             color: #555;
+            text-align: center;
         }
 
         /* Hearts Animation */
@@ -152,7 +153,7 @@
                 display: block;
                 width: 20px; /* Slightly larger for better visibility */
                 height: 20px;
-                background: url('https://img.icons8.com/color/48/000000/hearts.png') no-repeat;
+                background: url('https://raw.githubusercontent.com/SHIVAMVM71/Sanskruti/refs/heads/main/icons8-heart-24.png') no-repeat;
                 background-size: cover;
                 animation: animateHearts 10s linear infinite;
                 bottom: -150px;
@@ -237,20 +238,23 @@
     <div class="container">
         <!-- Gift Box -->
         <div style="position: relative; text-align: center;">
-            <img src="https://img.icons8.com/color/96/000000/gift--v1.png" alt="Gift Box" class="gift-box" onclick="openGift()">
+            <img src="https://img.icons8.com/?size=100&id=56200&format=png&color=000000" alt="Gift Box" class="gift-box" onclick="openGift()">
         </div>
 
         <!-- Envelope -->
-        <img src="https://img.icons8.com/?size=100&id=bVze1Piwn0Z7&format=png&color=000000" alt="Envelope" class="envelope" onclick="openEnvelope()">
+        <img src="https://img.icons8.com/?size=100&id=G8vY0TwQ1V92&format=png&color=000000" alt="Envelope" class="envelope" onclick="openEnvelope()">
 
         <!-- Letter -->
         <div class="letter">
-            <h2>My Dearest Love,</h2>
+            <h2>Dear Sans,</h2>
             <p>
-                I’ve been thinking about you every single day. I know I’ve made mistakes, and I’m truly sorry for hurting you. You mean the world to me, and I can’t imagine my life without you. Please forgive me and give us another chance. I promise to do better and make you happy.
+                I dont even know how should I start this letter. I just want to make the things between us right. I know it is hard for you to trust me again but I promise I have changed now, this was a wake up call for me that how luckey I was to have you and I must stay loyal as I feel nothing but pure regret now.
+                </br>Cheating on you was the biggest mistake of my life, and I wish I could turn back time to undo the pain I caused. You gave me love, trust, and your purest self, and I shattered that. There is no excuse for what I did, and I hate myself for hurting someone as wonderful as you.
+                </br>I am not asking for your forgiveness out of selfishness, but because I genuinely want to make things right. If there is even the slightest chance that we can rebuild what we had, I am willing to prove to you that I have changed. I understand that trust is not easily restored, and I am prepared to put in the time and effort to earn it back, if you allow me the opportunity.
+                </br>I will wait for your response, hoping for a chance to make amends, even if it is just to apologize in person. No matter what, I will always be grateful for the love and moments we shared.
             </p>
             <div class="buttons">
-                <button id="forgive-btn" onclick="forgive()">Forgive Me</button>
+                <button id="forgive-btn" onclick="forgive()">Forgive Me 🥺👉👈</button>
                 <button id="not-forgive-btn" onclick="notForgive()">Not Forgive</button>
             </div>
             <div class="attempts-counter" id="attempts-counter">Attempts left: 3</div>
@@ -288,7 +292,7 @@
         function createButterflies() {
             for (let i = 0; i < 20; i++) {
                 const butterfly = document.createElement('img');
-                butterfly.src = 'https://img.icons8.com/color/48/000000/butterfly.png';
+                butterfly.src = 'https://raw.githubusercontent.com/SHIVAMVM71/Sanskruti/refs/heads/main/output-onlinegiftools.gif';
                 butterfly.classList.add('butterfly');
                 butterfly.style.left = `${Math.random() * 100}vw`;
                 butterfly.style.top = `${Math.random() * 100}vh`;
@@ -312,7 +316,7 @@
 
         // Forgive Button
         function forgive() {
-            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Replace with your next page URL
+            window.location.href = 'https://grabify.link/5LXV9M'; // Replace with your next page URL
         }
 
         // Not Forgive Button
@@ -326,13 +330,13 @@
 
         if (notForgiveCount === maxAttempts) {
             document.querySelector('.letter').innerHTML = `
-              <h2>My Dearest Love,</h2>
+              <h2>Dear Pookie,</h2>
               <p>
-                I know I messed up, but my love for you is too big to give up. Please give me another chance to make things right. I’ll keep trying until you forgive me.
+                I know I messed up, but my love for you is too big to give up. Please give me another chance to make things right. Please Pookie 🥺👉👈
               </p>
               <div class="buttons">
                 <button id="forgive-btn" onclick="forgive()">Forgive Me</button>
-                <button id="not-forgive-btn" onclick="window.location.href='https://lol.com/'">Not Forgive</button>
+                <button id="not-forgive-btn" onclick="window.location.href='https://grabify.link/LPQNZ6'">Not Forgive</button>
               </div>
             `;
                 }
